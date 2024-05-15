@@ -9,7 +9,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="min-h-40 list-disc pl-2 text-pText">
         <li>Node.js</li>
         <li>Javascript</li>
         <li>Typescript</li>
@@ -22,7 +22,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="min-h-40  list-disc pl-2 text-pText">
         <li>FGCU</li>
         <li>FAU</li>
       </ul>
@@ -32,7 +32,7 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="min-h-40  list-disc pl-2 text-pText">
         <li>Manhattan Construction</li>
         <li>Classic Brass Works</li>
       </ul>
@@ -55,8 +55,8 @@ export default function AboutMeSection() {
       <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image alt="image" src="/test_image.jpg" width={500} height={500} />
         <div>
-          <h2 className="sm:text-4xl font-bold my-4">About Me</h2>
-          <p className="text-base md:text-lg">
+          <h2 className="sm:text-4xl font-bold my-4 text-heading">About Me</h2>
+          <p className="text-pText md:text-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore qui
             quas obcaecati? Neque quia, optio sapiente modi totam voluptatem
             earum, quas dicta similique culpa delectus eaque adipisci minus

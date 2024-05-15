@@ -16,23 +16,26 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(true);
 
   return (
-    <nav className="bg-[#121212] bg-opacity-100">
+    <nav className="bg-c4 bg-opacity-100">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link href={"/"} className="text-2xl md:text-5xl font-semibold p-4">
+        <Link
+          href={"/"}
+          className="text-white text-2xl md:text-5xl font-semibold p-4"
+        >
           LOGO
         </Link>
         <div className="mobile-menu block md:hidden ">
           {navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 test-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-c2 text-c2 hover:text-white hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 test-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-c2 text-c2 hover:text-white hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>

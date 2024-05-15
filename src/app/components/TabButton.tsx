@@ -9,9 +9,7 @@ export default function TabButton<T>({
   selectTab,
   children,
 }: TabButtonProps<T>) {
-  const buttonClasses = active
-    ? "text-white border-b border-purple-500"
-    : "text-[#ADB7BE]";
+  const buttonClasses = active ? "text-pText border-b border-c1" : "text-c2";
   return (
     // Not sure what is the best way to avoid this error
     // <button onClick={selectTab}>

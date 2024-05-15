@@ -47,7 +47,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="col-span-5 place-self-center sm:place-self-auto mt-4 lg:mt-0">
-          <div className="relative rounded-full bg-{#181818}  h-[250px] w-[250px] lg:w-[400px] lg:h-[400px] border border-red-500">
+          <div className="relative rounded-full bg-{#181818}  h-[250px] w-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               src="/hero-image.png"
