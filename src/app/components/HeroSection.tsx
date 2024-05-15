@@ -5,18 +5,21 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function HeroSection() {
   return (
-    <section>
+    <section className="lg:py-4 ">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <div>Hello my name is Nicolas</div>
-            <TypeAnimation
-              sequence={["Project Manager", 2000, "Software Developer", 2000]}
-              wrapper="span"
-              speed={50}
-              style={{ fontSize: "", display: "inline-black" }}
-              //   repeat={Infinity}
-            />
+            <div>Hi my name is Nicolas</div>
+            <div className="min-h-16 sm:min-h-32 md:min-h-32 xl:min-h-16">
+              <TypeAnimation
+                // preRenderFirstString={true}
+                sequence={["Project Manager", 2000, "Software Developer", 2000]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: "", display: "inline-black" }}
+                // repeat={Infinity}
+              />
+            </div>
           </h1>
           <p className="text-base  sm:text-lg lg:text-xl mb-6">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque

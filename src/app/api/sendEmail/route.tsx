@@ -16,7 +16,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
     });
     return NextResponse.json({ success: true });
   } catch (error: any) {
-    console.log(error);
+    // console.log("ROUTING ERROR", error);
     return NextResponse.json({ message: error.message }, { status: 400 });
   }
 }

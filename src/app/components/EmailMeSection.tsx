@@ -11,6 +11,9 @@ export default function EmailMeSection() {
   const [userSubject, setUserSubject] = useState("");
   const [userMessage, setUserMessage] = useState("");
 
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [emailFailedToSend, setEmailFailedToSend] = useState(false);
+
   // const send = async () => {
   const send = async () => {
     try {
@@ -26,11 +29,29 @@ export default function EmailMeSection() {
           message: userMessage,
         }),
       });
+
+      console.log(response);
       if (!response.ok) {
+        setEmailFailedToSend(true);
+
+        setTimeout(() => {
+          setEmailFailedToSend(false);
+        }, 8000);
+
         throw new Error("Failed to send email");
       }
-      const responseData = await response.json();
-      console.log(responseData);
+
+      if (response.status === 200) {
+        console.log("Email Sent");
+        setEmailSubmitted(true);
+        setUserEmail("");
+        setUserSubject("");
+        setUserMessage("");
+
+        setTimeout(() => {
+          setEmailSubmitted(false);
+        }, 3000);
+      }
     } catch (error) {
       console.error("Error sending email:", error); // Handle error
     }
@@ -113,6 +134,17 @@ export default function EmailMeSection() {
         >
           Send Message
         </button>
+        {emailSubmitted && (
+          <p className="text-green-500 text-sm mt-2">
+            Email sent successfully!
+          </p>
+        )}
+        {emailFailedToSend && (
+          <p className="text-red-500 text-sm mt-2">
+            Error: email not sent. Please contact me directly through one of my
+            contact links. Thank You!
+          </p>
+        )}
       </form>
     </section>
   );
