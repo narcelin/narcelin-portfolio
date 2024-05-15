@@ -13,7 +13,7 @@ export const navLinks = [
 ];
 
 export default function Navbar() {
-  const [navbarOpen, setNavbarOpen] = useState(true);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="bg-c4 bg-opacity-100">

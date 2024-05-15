@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="lg:py-4 ">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+          <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">
             <div>Hi my name is Nicolas</div>
             <div className="min-h-16 sm:min-h-32 md:min-h-32 xl:min-h-16">
               <TypeAnimation
@@ -21,7 +21,7 @@ export default function HeroSection() {
               />
             </div>
           </h1>
-          <p className="text-base  sm:text-lg lg:text-xl mb-6">
+          <p className="text-pText  sm:text-lg lg:text-xl mb-6">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
             inventore minima voluptate ut numquam harum hic provident quam.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic earum
@@ -39,10 +39,17 @@ export default function HeroSection() {
           </p>
           <div className="flex justify-center lg:justify-normal">
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black mt-3">
-              Hire Me
+              <a href="/pdfs/Arcelin_Nicolas_Resume.pdf" target="_blank">
+                Hire me
+              </a>
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border botder-white mt-3">
-              Download CV
+              <a
+                href="/pdfs/Arcelin_Nicolas_Resume.pdf"
+                download="arcelin_nicolas_cv.pdf"
+              >
+                Download CV
+              </a>
             </button>
           </div>
         </div>
@@ -50,7 +57,7 @@ export default function HeroSection() {
           <div className="relative rounded-full bg-{#181818}  h-[250px] w-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              src="/hero-image.png"
+              src="/images/computer-and-people.svg"
               alt="Icon"
               width={300}
               height={300}

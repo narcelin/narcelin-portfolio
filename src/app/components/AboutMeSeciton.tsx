@@ -53,7 +53,13 @@ export default function AboutMeSection() {
   return (
     <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image alt="image" src="/test_image.jpg" width={500} height={500} />
+        <Image
+          className="rounded-2xl"
+          alt="image"
+          src="/images/businessImg.jpg"
+          width={500}
+          height={500}
+        />
         <div>
           <h2 className="sm:text-4xl font-bold my-4 text-heading">About Me</h2>
           <p className="text-pText md:text-lg">
