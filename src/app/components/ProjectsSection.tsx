@@ -7,9 +7,8 @@ import { useState } from "react";
 const PROJECTS_DATA = [
   {
     id: 1,
-    title: "Projects 1",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, itaque.",
+    title: "Portfolio",
+    description: "NextJS along with Tailwindcss and other libraries.",
     imgUrl: "/test_image.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/narcelin/portfolio_app",
@@ -17,23 +16,22 @@ const PROJECTS_DATA = [
   },
   {
     id: 2,
-    title: "Projects 2",
+    title: "Dashboard Project",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, itaque.",
-    imgUrl: "/test_image.jpg",
+      "Linked supabase (backend database) with a front end dashboard using NextJS.",
+    imgUrl: "/images/businessDashboardProject.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
+    previewUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
   },
   {
     id: 3,
-    title: "Projects 3",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, itaque.",
-    imgUrl: "/test_image.jpg",
+    title: "Food Purchasing App through CLI",
+    description: "Food Purchasing App through CLI using C",
+    imgUrl: "/images/foodPurchasingAppUsingC.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
+    previewUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
   },
   {
     id: 4,

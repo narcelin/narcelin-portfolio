@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
@@ -22,7 +23,7 @@ export default function Navbar() {
           href={"/"}
           className="text-white text-2xl md:text-5xl font-semibold p-4"
         >
-          LOGO
+          <Image src="/images/logo.svg" alt="logo" width={75} height={75} />
         </Link>
         <div className="mobile-menu block md:hidden ">
           {navbarOpen ? (

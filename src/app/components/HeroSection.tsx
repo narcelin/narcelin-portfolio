@@ -22,20 +22,8 @@ export default function HeroSection() {
             </div>
           </h1>
           <p className="text-pText  sm:text-lg lg:text-xl mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-            inventore minima voluptate ut numquam harum hic provident quam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic earum
-            porro repellendus. Nulla molestias, iure nisi doloremque cumque
-            soluta unde ratione error, natus at, ullam voluptas voluptates
-            reiciendis eius. Earum ducimus laboriosam dolor neque sunt nihil.
-            Minus minima incidunt ratione omnis debitis eius fugit consequatur
-            aperiam. Laborum reiciendis placeat enim doloribus iusto optio quis
-            officia, numquam modi. Inventore perspiciatis porro quibusdam eaque!
-            Quo, qui vitae autem esse maxime commodi et nisi exercitationem
-            corporis iste fuga accusamus amet rerum porro perspiciatis, deleniti
-            nemo aspernatur doloribus ab impedit! Quas amet dolorem, suscipit
-            perspiciatis non voluptates, molestiae cupiditate consectetur enim
-            error quis excepturi.
+            Experienced Project Manager with a demonstrated history of working
+            in the construction industry.
           </p>
           <div className="flex justify-center lg:justify-normal">
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black mt-3">

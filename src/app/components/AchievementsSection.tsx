@@ -1,10 +1,10 @@
 "use client";
 
 const achievementsList = [
-  { metric: "Projects", value: "100+", postfix: "+" },
-  { metric: "Users", value: "1M+", prefix: "$" },
-  { metric: "Awards", value: "10+", postfix: "+" },
-  { metric: "Years", value: "5+", postfix: "+" },
+  { metric: "Projects", value: "~50" },
+  { metric: "Employees Trained", value: "13" },
+  { metric: "Certificates", value: "9+" },
+  { metric: "Languages", value: "2" },
 ];
 
 export default function AchievementsSection() {

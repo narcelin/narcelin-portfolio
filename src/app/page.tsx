@@ -3,7 +3,7 @@ import HeroSection from "./components/HeroSection";
 import AchievementsSection from "./components/AchievementsSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
-import EmailMeSection from "./components/EmailMeSection";
+import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         <AchievementsSection />
         <AboutMeSection />
         <ProjectsSection />
-        <EmailMeSection />
+        <ContactMeSection />
       </div>
       <Footer />
     </main>

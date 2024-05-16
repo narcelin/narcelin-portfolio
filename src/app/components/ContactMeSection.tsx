@@ -58,16 +58,21 @@ export default function EmailMeSection() {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
+    <section
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
+      id="contact"
+    >
       <div>
         {/* FUTURE DEVELOPMENT: UPGRADE YOUR FORMS -> https://www.youtube.com/watch?v=t2LvPXHLrek */}
         <h5 className="text-xl font-bold text-heading my-2">Lets Connect</h5>
         <p className="text-pText mb-4 max-w-md">
-          {" "}
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem fuga
-          nesciunt ratione aut sapiente, quos ad veniam, ut necessitatibus
-          cupiditate dicta saepe unde velit vitae adipisci soluta, vel id
-          quidem.
+          {`Hey there! Welcome to my corner of the web! 🌟 I'm thrilled you've
+          dropped by. Whether you're here to explore potential collaborations,
+          bounce around some ideas, or just share a fun fact or two, I'm all
+          ears! Let's connect and see where our paths might intertwine. From
+          brainstorming sessions to work partnerships, and even swapping trivia
+          about obscure hobbies, I'm open to it all. So, don't hesitate to reach
+          out! Let's make some magic happen together.`}
         </p>
         <div className="socials flex flex-row gap-2">
           <Link
