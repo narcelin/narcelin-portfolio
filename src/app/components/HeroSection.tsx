@@ -51,6 +51,7 @@ export default function HeroSection() {
               height={300}
             />
           </div>
+          <div className="text-pText text-sm">{`"WORK IN PROGRESS"`}</div>
         </div>
       </div>
     </section>
