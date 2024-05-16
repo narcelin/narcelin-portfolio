@@ -69,10 +69,7 @@ export default function EmailMeSection() {
           {`Hey there! Welcome to my corner of the web! 🌟 I'm thrilled you've
           dropped by. Whether you're here to explore potential collaborations,
           bounce around some ideas, or just share a fun fact or two, I'm all
-          ears! Let's connect and see where our paths might intertwine. From
-          brainstorming sessions to work partnerships, and even swapping trivia
-          about obscure hobbies, I'm open to it all. So, don't hesitate to reach
-          out! Let's make some magic happen together.`}
+          ears! Let's connect.`}
         </p>
         <div className="socials flex flex-row gap-2">
           <Link

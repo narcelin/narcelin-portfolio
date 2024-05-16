@@ -15,6 +15,7 @@ const TAB_DATA = [
         <li>Typescript</li>
         <li>C++</li>
         <li>Java</li>
+        <li>And more...</li>
       </ul>
     ),
   },
@@ -23,8 +24,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="min-h-40  list-disc pl-2 text-pText">
-        <li>FGCU</li>
-        <li>FAU</li>
+        <li>{`Civil Engineering (FGCU - 2022)`}</li>
+        <li>{`Environmental Engineering (FGCU - 2022)`}</li>
+        <li>{`Computer Science (FAU - In-Progress)`}</li>
       </ul>
     ),
   },
@@ -33,8 +35,10 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="min-h-40  list-disc pl-2 text-pText">
-        <li>Manhattan Construction</li>
-        <li>Classic Brass Works</li>
+        <li>{`Civil Engineer Intern (Kimley Horn)`}</li>
+        <li>{`Field Engineer (Manhattan Construction)`}</li>
+        <li>{`Assisten Project Manager (ECS)`}</li>
+        <li>{`Project Manager & Production Manager (Classic Brass Works)`}</li>
       </ul>
     ),
   },
@@ -52,7 +56,7 @@ export default function AboutMeSection() {
 
   return (
     <section id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="xl:grid xl:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           className="rounded-2xl"
           alt="image"
