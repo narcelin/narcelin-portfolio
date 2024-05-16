@@ -9,8 +9,8 @@ const PROJECTS_DATA = [
     id: 1,
     title: "Portfolio",
     description: "NextJS along with Tailwindcss and other libraries.",
-    imgUrl: "/test_image.jpg",
-    tag: ["All", "Web"],
+    imgUrl: "/images/portfolioProjectPrev.png",
+    tag: ["All", "Websites"],
     gitUrl: "https://github.com/narcelin/portfolio_app",
     previewUrl: "/",
   },
@@ -20,28 +20,18 @@ const PROJECTS_DATA = [
     description:
       "Linked supabase (backend database) with a front end dashboard using NextJS.",
     imgUrl: "/images/businessDashboardProject.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Websites"],
     gitUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
     previewUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
   },
   {
     id: 3,
-    title: "Food Purchasing App through CLI",
-    description: "Food Purchasing App through CLI using C",
-    imgUrl: "/images/foodPurchasingAppUsingC.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
-    previewUrl: "https://github.com/narcelin/fau_FoodPurchasingApp",
-  },
-  {
-    id: 4,
-    title: "Projects 4",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, itaque.",
-    imgUrl: "/test_image.jpg",
-    tag: ["All", "Websites"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Data Structures and Algorithm Projects Using C++",
+    description: "Doubly linked lists, queues, stacks, and more",
+    imgUrl: "/images/dataStructPrev.png",
+    tag: ["All", "CLI"],
+    gitUrl: "https://github.com/narcelin/cpp_datastructures",
+    previewUrl: "https://github.com/narcelin/cpp_datastructures",
   },
 ];
 
@@ -71,6 +61,16 @@ export default function ProjectsSection() {
           onClick={() => setTag("Websites")}
         >
           Websites
+        </button>
+        <button
+          className={`text-xl border-2  hover:text-white hover:border-white rounded-full py-1 px-5 ${
+            tag === "Websites"
+              ? "text-white border-white"
+              : "text-[#ADB7BE] border-[#ADB7BE]"
+          }`}
+          onClick={() => setTag("CLI")}
+        >
+          CLI
         </button>
       </div>
       <div className="flex flex-col justify-between gap-5 sm:grid grid-cols-3">
