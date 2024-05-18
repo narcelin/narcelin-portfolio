@@ -73,7 +73,7 @@ export default function ProjectsSection() {
           CLI
         </button>
       </div>
-      <div className="flex flex-col items-center :justify-between gap-5 xl:grid grid-cols-3">
+      <div className="flex flex-col items-center justify-between gap-5 xl:grid grid-cols-3">
         {PROJECTS_DATA.map((project) =>
           project.tag.includes(tag) ? (
             <ProjectCard

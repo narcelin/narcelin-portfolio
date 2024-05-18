@@ -19,7 +19,7 @@ export default function ProjectCard({
   return (
     <div className="flex content-end justify-end items-end">
       <div
-        className="w-[500px] h-52 md:h-72 content-end rounded-xl relative group"
+        className="max-w-sm h-52 md:h-72 content-end rounded-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
