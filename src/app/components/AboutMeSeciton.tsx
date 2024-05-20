@@ -24,9 +24,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="min-h-40  list-disc pl-2 text-pText">
+        <li>{`Computer Science (FAU - In-Progress)`}</li>
         <li>{`Civil Engineering (FGCU - 2022)`}</li>
         <li>{`Environmental Engineering (FGCU - 2022)`}</li>
-        <li>{`Computer Science (FAU - In-Progress)`}</li>
       </ul>
     ),
   },
@@ -35,10 +35,10 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="min-h-40  list-disc pl-2 text-pText">
-        <li>{`Civil Engineer Intern (Kimley Horn)`}</li>
-        <li>{`Field Engineer (Manhattan Construction)`}</li>
-        <li>{`Assisten Project Manager (ECS)`}</li>
         <li>{`Project Manager & Production Manager (Classic Brass Works)`}</li>
+        <li>{`Assisten Project Manager (ECS)`}</li>
+        <li>{`Field Engineer (Manhattan Construction)`}</li>
+        <li>{`Civil Engineer Intern (Kimley Horn)`}</li>
       </ul>
     ),
   },
@@ -66,9 +66,23 @@ export default function AboutMeSection() {
         />
         <div>
           <h2 className="sm:text-4xl font-bold my-4 text-heading">About Me</h2>
-          <p className="text-pText md:text-md">
-            {`Well, hello there, and welcome to my portfolio! I'm Nicolas Arcelin Ovando, a dedicated Project Manager with a passion for solving problems. With over 4 years of hands-on experience in project management in engineering. I've had the privilege of spearheading impactful projects where I've embraced opportunities for teaching and continuous learning. My journey has given me the skills to navigate complex situations and deliver results. Whether it's coordinating tasks, managing resources, or ensuring seamless communication between all stakeholders. I thrive in a dynamic environment where challenges are met with innovative ideas. One of my greatest strengths is my ability to connect with clients on a personal level, understanding their needs, and translating them into actionable plans. I take pride in fostering strong client relationships built on trust, effective communication, and understanding. I encourage you to explore the projects I've been involved in. Feel free to reach out!`}
-          </p>
+          <div className="text-pText md:text-md">
+            <p className="mb-5">
+              {`Welcome to my corner of the web! 🌟 I'm Nicolas Arcelin Ovando, a dedicated Project Manager with a passion for solving problems.`}
+            </p>
+            <p className="mb-5">
+              {`I have over 4 years of hands-on project management experience in engineering, spearheading impactful projects that have allowed me to embrace opportunities for teaching and continuous learning.`}
+            </p>
+            <p className="mb-5">
+              {`Throughout my journey, I've honed my skills to navigate complex situations and deliver results. Whether it's coordinating tasks, managing resources, or ensuring seamless communication between all stakeholders, I thrive in dynamic environments where challenges are met with innovative ideas.`}
+            </p>
+            <p className="mb-5">
+              {`One of my greatest strengths lies in my ability to connect with clients on a personal level. Understanding their needs and translating them into actionable plans is paramount. I take pride in fostering strong client relationships built on trust, effective communication, and understanding.`}
+            </p>
+            <p className="mb-5">
+              {`I encourage you to explore the projects I've been involved in, and feel free to reach out with any inquiries!`}
+            </p>
+          </div>
           <div className="flex flex-row mt-8">
             <button onClick={() => handleTabChange("skills")}>
               <TabButton
